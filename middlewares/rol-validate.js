@@ -4,7 +4,7 @@ const role = require("../models/role");
 const esAdminRole = (req = request, res = response, next) => {
     if (!req.usuario) {
         return res.status(500).json({
-            msg: 'se quiere verificar el role sin validar el token primero'
+            msg: 'se quiere verificar el role sin validar el token primero sdr'
         });
     }
 

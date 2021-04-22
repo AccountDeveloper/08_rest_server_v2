@@ -56,13 +56,12 @@ const usuariosDelete = async(req, res = response) => {
     const { id } = req.params;
 
     //borrado lógico
-    const usuario = await Usuario.findByIdAndUpdate(id, { status: false })
+    const usuario = await Usuario.findByIdAndUpdate(id, { status: false });
 
     res.status(200).json({
         usuario
     });
 };
-
 
 module.exports = {
     usuariosGet,
